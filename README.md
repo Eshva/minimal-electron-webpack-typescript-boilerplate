@@ -9,3 +9,5 @@ $ npm install
 $ npm run build
 $ npm start
 ```
+
+Inspired by [tarunlalwani/electron-webpack-typescript-boilerplate](https://github.com/tarunlalwani/electron-webpack-typescript-boilerplate)
