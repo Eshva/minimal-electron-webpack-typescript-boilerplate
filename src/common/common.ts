@@ -1,3 +1,1 @@
-let NAME = "TARUN LALWANI";
-
-export default NAME;
+export const stringFromCode: string = "a string from code.";

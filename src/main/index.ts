@@ -1,24 +1,24 @@
 import { app, BrowserWindow } from "electron";
 import * as path from "path";
 import * as url from "url";
-import NAME from "../common/common";
+import { stringFromCode } from "../common/common";
 
-console.log("NAMES is " + NAME);
+console.log(`I log '${stringFromCode}'`);
 
 let mainWindow: Electron.BrowserWindow;
 
 function createWindow() {
   // Create the browser window.
   mainWindow = new BrowserWindow({
-    height: 600,
-    width: 800,
+    height: 900,
+    width: 1600
   });
 
   // and load the index.html of the app.
   mainWindow.loadURL(url.format({
-      pathname: path.resolve(__dirname, "../renderer/index.html"),
-      protocol: "file:",
-      slashes: false,
+    pathname: path.resolve(__dirname, "../renderer/index.html"),
+    protocol: "file:",
+    slashes: false,
   }));
 
   // Open the DevTools.

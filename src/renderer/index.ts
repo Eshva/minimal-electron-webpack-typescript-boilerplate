@@ -1,10 +1,10 @@
-import NAME from "../common/common";
+import { stringFromCode } from "../common/common";
 
-export function init() {
-  document.write(`<h1>The name is ${NAME}</h1>`);
+function init(): void {
+  document.write(`<h1>I render '${stringFromCode}'</h1>`);
 }
 
-document.addEventListener("DOMContentLoaded", function () {
-  console.log("page is loaded and ready");
+document.addEventListener("DOMContentLoaded", () => {
+  console.log("Page is loaded and ready!");
   init();
 });
