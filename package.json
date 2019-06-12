@@ -16,8 +16,9 @@
   },
   "scripts": {
     "start": "electron output/compiled",
-    "g": "electron --help",
-    "build": "webpack --config webpack.config.js && cpx src/renderer/index.html output/compiled/renderer && cpx src/main/package.json output/compiled"
+    "build": "webpack --config webpack.config.js && cpx src/renderer/index.html output/compiled/renderer && cpx src/main/package.json output/compiled",
+    "package": "electron-builder",
+    "postinstall": "electron-builder install-app-deps"
   },
   "dependencies": {
     "electron": "5.0.3",
