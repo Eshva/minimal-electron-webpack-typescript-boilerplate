@@ -30,7 +30,7 @@ module.exports = [
     },
     output: {
       filename: '[name]-bundle.js',
-      path: path.resolve(__dirname, 'dist/main')
+      path: path.resolve(__dirname, 'output/compiled/main')
     },
   }),
   Object.assign({}, common_config, {
@@ -40,7 +40,7 @@ module.exports = [
     },
     output: {
       filename: '[name]-bundle.js',
-      path: path.resolve(__dirname, 'dist/renderer')
+      path: path.resolve(__dirname, 'output/compiled/renderer')
     },
   })
 ]
